@@ -1,0 +1,47 @@
+object Form1: TForm1
+  Left = 236
+  Height = 474
+  Top = 133
+  Width = 317
+  Caption = 'rdp_viewer'
+  ClientHeight = 474
+  ClientWidth = 317
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  object Button1: TButton
+    Left = 4
+    Height = 25
+    Top = 5
+    Width = 308
+    Caption = 'перечитать активных пользователей'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object StringGrid1: TStringGrid
+    Left = 8
+    Height = 440
+    Top = 32
+    Width = 200
+    ColCount = 3
+    Columns = <    
+      item
+        MaxSize = 400
+        Title.Caption = '1st_name'
+      end    
+      item
+        Title.Caption = 'id+'
+      end>
+    RowCount = 1
+    TabOrder = 1
+    OnDblClick = StringGrid1DblClick
+  end
+  object Button2: TButton
+    Left = 208
+    Height = 26
+    Top = 32
+    Width = 103
+    Caption = 'Button2'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+end
